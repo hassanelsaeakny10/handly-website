@@ -1,68 +1,62 @@
-:root {
-    --primary-purple: #6A0DAD;
-    --secondary-purple: #9B30FF;
-    --background-light: #F3E8FF;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: var(--background-light);
-    color: var(--primary-purple);
+    font-family: 'Playfair Display', serif;
+    background-color: #F3E8FF;
+    color: #6A0DAD;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
-    background-color: var(--primary-purple);
+    background-color: #6A0DAD;
     color: white;
     padding: 20px 0;
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: 700;
-    color: white;
-    margin: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
 }
 
 main {
-    padding: 40px 20px;
-}
-
-.icons-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 40px 0;
-    color: var(--secondary-purple);
-}
-
-footer {
-    margin-top: 40px;
     padding: 20px;
-    background-color: var(--primary-purple);
-    color: white;
 }
 
-a.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: var(--secondary-purple);
+.add-product, .product-list {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+input, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #9B30FF;
+}
+
+button {
+    background-color: #9B30FF;
     color: white;
-    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7D1FB0;
+}
+
+.product-card {
+    border: 1px solid #9B30FF;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
     border-radius: 8px;
 }

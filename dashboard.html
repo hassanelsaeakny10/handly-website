@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handly Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1 class="logo">Handly Dashboard</h1>
+</header>
+
+<main>
+  <section class="add-product">
+    <h2>Add New Product</h2>
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Product Name" required>
+      <input type="text" id="desc" placeholder="Description" required>
+      <input type="number" id="price" placeholder="Price" required>
+      <input type="file" id="image" accept="image/*" required>
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <section class="product-list">
+    <h2>Products List</h2>
+    <div id="productsGrid"></div>
+  </section>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
